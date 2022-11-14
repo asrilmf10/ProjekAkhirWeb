@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Bagian Header */
+.header{
+    height: 30px;
+    width: 100%;
+    background-color: #00DEFF;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.h-list {
+    overflow: hidden;
+}
+.h-list a {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.h-list a:hover {
+    color: white;
+}
+.h-list a.home {
+    background-color: #00ABE0;
+    color: white;
+}
+.h-list a.home:hover {
+    color: black;
+}
+.h-list a.aboutMe {
+    background-color: #00DEFF;
+}
+.h-list a.resep {
+    background-color: #00DEFF;
+}
+/* Bagian Navbar */
+.navbar{
+    height: 90px;
+    width: 100%;
+    opacity: 0.70;
+    background-image: url("gambar/wallpaper.jpg");
+    /* background-color: #00ABE0; */
+}
+button {
+    cursor: pointer;
+    border: 1.5px solid black;
+    text-align: center;
+    font-size: 14px;
+}
+.n-logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 10px;
+    text-align: center;
+    line-height: 1px;
+}
+.n-logo input[type=text] {
+    border: 1.5px solid black;
+}
+.n-logo button[type=submit] {
+    border: 1.5px solid black;
+}
+.logo {
+    padding-top: 10px;
+    font-size: 20px;
+}
+.teks {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    line-height: 1px;
+}
+.cari {
+    margin: 3px;
+    font-size: 12px;
+}
+/* Bagian Main-Content */
+.main{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #E6F4F1;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.c-items {
+    float: left;
+    padding: 35px 24px;
+}
+.c-items p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.c-items p:hover {
+    color: #00DEFF;
+}
+/* Bagian Footer */
+.footer{
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.75;
+    background-image: url("gambar/background.jpg");
+    /* background-color: #DC751E; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.f-teks {
+    text-align: center;
+    padding-top: 12px;
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+}
+/* Bagian Dark Mode */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.dark-mode .header {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.dark-mode .h-list a.home {
+    color: black;
+}
+.dark-mode .h-list a {
+    color: white;
+}
+.dark-mode .h-list a:hover {
+    color: black;
+}
+.dark-mode .main {
+    color: white;
+    background-color: black;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.dark-mode .main p.text {
+    color: white;
+}
+.dark-mode .media a {
+    color: whitesmoke;
+}
+.dark-mode .footer {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.dark-mode .f-teks {
+    color: white;
+} 
+/* CSS Responsive */
+@media only screen and (max-width: 425px) {
+    /* Tampilan Untuk Mobile */
+    .header{
+        height: 60px;
+        width: 100%;
+        background-color: #00DEFF;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+  
+    .main{
+        height: 67%;
+        width: 100%;
+        position: absolute;
+        background-color: #E6F4F1;
+        right: 0;
+        z-index: 2;
+    }
+  
+    .tentang {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tentang h3 {
+        position: absolute;
+        left: 0px;
+        scale: 50%;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .tentang tr {
+        position: absolute;
+        top:50px;  
+        left: 0px;
+        scale: 50%;
+        width: 100%;
+        padding: 10px;
+    }
+}
